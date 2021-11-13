@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="trabalhoJavaVestuario:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/trabalhoJavaVestuario_jar</output-path>
+    <root id="archive" name="trabalhoJavaVestuario.jar">
+      <element id="module-output" name="trabalhoJavaVestuario" />
+    </root>
+  </artifact>
+</component>

@@ -1,35 +1,34 @@
 package com.vestuario.main;
 
-import com.vestuario.classes.*;
+import com.vestuario.classes.Roupa;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
 
 public class RoupaLinhaTabela {
-    JLabel descricaoRoupa;
-    JButton excluirRoupa;
+    protected JPanel linhaTabelaPanel;
+    protected JLabel descricaoRoupaLabel;
 
-    public RoupaLinhaTabela(Roupa roupa, JPanel painelAlvo) {
-        descricaoRoupa = new JLabel(roupa.getNome() + " - Cor: " + roupa.getCor() + " - Local: " + roupa.getLocalRoupa());
-        excluirRoupa = new JButton("Excluir");
+    public RoupaLinhaTabela(Roupa roupa, String stringDescricaoRoupa) {
 
-        painelAlvo.add(descricaoRoupa);
-        painelAlvo.add(excluirRoupa);
+        linhaTabelaPanel = new JPanel();
+        linhaTabelaPanel.setLayout(new FlowLayout());
+
+        descricaoRoupaLabel = new JLabel(stringDescricaoRoupa);
+
+        linhaTabelaPanel.add(descricaoRoupaLabel);
+
+
+    }
+
+    public void adicionarAoPainelRevalidar(JPanel painelAlvo) {
+        painelAlvo.add(this.linhaTabelaPanel);
         painelAlvo.revalidate();
+    }
 
-        excluirRoupa.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Main.instanciasRoupasCriadas.remove(roupa);
-                roupa.local.retirarRoupa(roupa);
-
-                painelAlvo.remove(descricaoRoupa);
-                painelAlvo.remove(excluirRoupa);
-                painelAlvo.revalidate();
-                painelAlvo.repaint();
-                JOptionPane.showMessageDialog(null, roupa.getNome() + " excluído!");
-            }
-        });
+    public void removerDoPainelRepintar(JPanel painelAlvo) {
+        painelAlvo.remove(this.linhaTabelaPanel);
+        painelAlvo.revalidate();
+        painelAlvo.repaint();
     }
 }

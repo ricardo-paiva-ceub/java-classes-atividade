@@ -7,15 +7,6 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="5cad9" class="javax.swing.JLabel" binding="incluirRoupaLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <text value="Incluir roupa"/>
-        </properties>
-      </component>
       <component id="6eb89" class="javax.swing.JLabel" binding="nomeRoupaLabel">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -147,6 +138,15 @@
         <properties>
           <background color="-7985633"/>
           <text value="Cancelar"/>
+        </properties>
+      </component>
+      <component id="5cad9" class="javax.swing.JLabel" binding="incluirRoupaLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Incluir roupa"/>
         </properties>
       </component>
     </children>

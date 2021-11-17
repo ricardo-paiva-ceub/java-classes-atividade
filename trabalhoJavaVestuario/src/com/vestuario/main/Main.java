@@ -9,12 +9,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
-    private JButton qtdDeRoupasNaLavanderiaButton;
+    public static JFrame framePrincipal = new JFrame("Gerenciador de roupas");
+
     private JPanel painelPrincipal;
-    private JButton qtdDeRoupasNoGuardaButton;
-    private JButton corPredominanteNoGuardaButton;
+    private JButton roupasNaLavanderiaButton;
+    private JButton roupasNoGuardaButton;
     private JButton cadastrarNovaRoupaButton;
     private JButton excluirRoupaButton;
+    private JButton sairAppButton;
+    private JButton roupasEmUsoButton;
 
     // Criar variáveis para utilização no programa
     public static ArrayList<Roupa> instanciasRoupasCriadas = new ArrayList<Roupa>();
@@ -24,6 +27,7 @@ public class Main {
     static LocalRoupa lavanderia = new LocalRoupa("Lavanderia");
     static LocalRoupa emUso = new LocalRoupa("Em Uso");
 
+    //    Conjunto de roupas inicipais de teste
     Roupa sueterAzul = new Roupa("Suéter azul", "Azul", 44, "Algodão peruano", 345.99, guardaRoupa);
     Roupa cardigaVermelho = new Roupa("Cardigã vermelho", "Vermelho", 35, "Lã", 415.45, lavanderia);
     Roupa croppedAzul = new Roupa("Cropped azul", "Amarelo", 69, "Nylon", 98.99, lavanderia);
@@ -31,6 +35,7 @@ public class Main {
     Esporte esportivaNike = new Esporte("Camiseta Esportiva Nike", "Azul", 35, "Dry-fit", 87.99, guardaRoupa, true);
 
     public Main() {
+
         instanciasRoupasCriadas.add(sueterAzul);
         instanciasRoupasCriadas.add(cardigaVermelho);
         instanciasRoupasCriadas.add(croppedAzul);
@@ -41,24 +46,28 @@ public class Main {
         listaLocaisRoupa.put("Lavanderia", lavanderia);
         listaLocaisRoupa.put("Em Uso", emUso);
 
-        qtdDeRoupasNaLavanderiaButton.addActionListener(new ActionListener() {
+        roupasNaLavanderiaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Quantidade de roupas na " + lavanderia.getNome() + ": " + lavanderia.countRoupas());
+                JFrame frameRoupasLavanderia = new JFrame("Lavanderia");
+                frameRoupasLavanderia.setContentPane(new RoupasLavanderia(frameRoupasLavanderia).roupasLavanderiaPanel);
+                frameRoupasLavanderia.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                frameRoupasLavanderia.pack();
+                frameRoupasLavanderia.setVisible(true);
+
             }
         });
-        qtdDeRoupasNoGuardaButton.addActionListener(new ActionListener() {
+        roupasNoGuardaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Quantidade de roupas no " + guardaRoupa.getNome() + ": " + guardaRoupa.countRoupas());
+                JFrame frameRoupasGuardaRoupa = new JFrame("Guarda-Roupas");
+                frameRoupasGuardaRoupa.setContentPane(new RoupasGuardaRoupa(frameRoupasGuardaRoupa).roupasGuardaRoupaPanel);
+                frameRoupasGuardaRoupa.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                frameRoupasGuardaRoupa.pack();
+                frameRoupasGuardaRoupa.setVisible(true);
             }
         });
-        corPredominanteNoGuardaButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Cor mais predominante das roupas no " + guardaRoupa.getNome() + ": " + guardaRoupa.getPredCor());
-            }
-        });
+
         cadastrarNovaRoupaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -73,42 +82,35 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frameExcluirRoupa = new JFrame("Excluir roupa");
-                frameExcluirRoupa.setContentPane(new ExcluirRoupa().excluirRoupaList);
+                frameExcluirRoupa.setContentPane(new ExcluirRoupa(frameExcluirRoupa).excluirRoupaPanel);
                 frameExcluirRoupa.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frameExcluirRoupa.pack();
                 frameExcluirRoupa.setVisible(true);
             }
         });
+        sairAppButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                framePrincipal.dispose();
+            }
+        });
+        roupasEmUsoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame frameRoupasEmUso = new JFrame("Roupas em uso");
+                frameRoupasEmUso.setContentPane(new RoupasEmUso(frameRoupasEmUso).roupasEmUsoPanel);
+                frameRoupasEmUso.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                frameRoupasEmUso.pack();
+                frameRoupasEmUso.setVisible(true);
+            }
+        });
     }
 
     public static void main(String[] args) {
-
-        JFrame framePrincipal = new JFrame("Gerenciador de roupas");
         framePrincipal.setContentPane(new Main().painelPrincipal);
         framePrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         framePrincipal.pack();
         framePrincipal.setVisible(true);
 
-//        Testes no console
-
-
-//        esportivaNike.toggleParaCalor();
-//        esportivaNike.toggleParaCalor();
-//        System.out.println("A roupa " + esportivaNike.getNome() + " é para calor? " + esportivaNike.getParaCalor());
-//
-//        System.out.println(sueterAzul.getCor());
-//        System.out.println(sueterAzul.getLocalRoupa());
-//
-//        System.out.println("Quantidade de roupas no " + guardaRoupa.getNome() + ": " + guardaRoupa.countRoupas());
-//
-//
-//        sueterAzul.setLocalRoupa(lavanderia);
-//        System.out.println("Roupa retirada do Guarda-roupa e posta na Lavanderia.");
-//
-//        System.out.println("Quantidade de roupas na " + lavanderia.getNome() + ": " + lavanderia.countRoupas());
-//        System.out.println("Quantidade de roupas no " + guardaRoupa.getNome() + ": " + guardaRoupa.countRoupas());
-//
-//        System.out.println("Local onde está o " + sueterAzul.getNome() + ": " + sueterAzul.getLocalRoupa());
-//        System.out.println("Local onde está a " + socialArmani.getNome() + ": " + socialArmani.getLocalRoupa());
     }
 }

@@ -7,9 +7,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class RoupaLinhaEmUsoTabela extends RoupaLinhaTabela{
+public class RoupaLinhaEmUsoTabela extends RoupaLinhaTabela {
     JButton lavarRoupaButton;
     JButton guardarRoupaButton;
+
 
     public RoupaLinhaEmUsoTabela(Roupa roupa, JPanel painelAlvo, JLabel qtdRoupasLabel, JLabel corPredRoupasLabel) {
         super(roupa, roupa.getNome() + " - Cor: " + roupa.getCor());

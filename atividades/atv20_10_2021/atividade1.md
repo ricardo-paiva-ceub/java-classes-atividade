@@ -1,0 +1,9 @@
+## Atividade 01
+Para avaliar seu entendimento, descreva em seu caderno de anotações uma situação em que aconteça o polimorfismo.
+
+Polimorfismo signfica "várias formas". O polimorfismo é um fenômeno do Paradigma de Programação Orientada a Objetos que permite que um mesmo método se comporte de maneira diferente a depender da classe em que se encontra. Enfim, esse conceito permite que uma ação seja executada de diferentes maneiras a depender do contexto em que está inserida. O polimorfismo possibilita que seja definida uma interface, com múltiplas implementações.
+
+Em Java, podemos arrolar três tipos de polimorfismo:
+- Polimorfismo de sobrecarga: ocorre quando que um método é definido dentro de uma mesma classe mais de uma vez, com o mesmo nome, contanto que os parâmetros sejam de tipos diferentes na assinatura do método. A assinatura do método o identifica unicamente na linguagem Java e é composta por nome do método e os tipos dos parâmetros. Isso possibilita que um método possa lidar com parâmetros de diversos tipos (exemplo: int, double, String), mantendo seu nome.
+- Polimorfismo de substituição: possibilita que uma classe filha/subclasse sobrescreva um método da classe pai/superclasse, definindo um método de mesmo nome e, preferencialmente, assinalando com o "decorator" @Override. Isso permite que uma subclasse se comporte de maneira diferente da superclasse em determinado contexto.
+- Polimorfismo de inclusão: possibilita que uma classe filha seja utilizada em substituição à classe pai em qualquer circunstância. Toda subclasse pode ser utilizada em lugares em que se espera a utilização da superclasse. Isso atende ao princípio de substituição de Liskov no conjunto de princípios SOLID, o qual preceitua que objetos podem ser substituídos por seus subtipos, sem que isto afete a aplicação.

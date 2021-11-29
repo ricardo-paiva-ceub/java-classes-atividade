@@ -12,9 +12,16 @@ public class ExcluirRoupa {
     private JLabel excluirRoupaLabel;
     public JPanel excluirRoupaList;
     private JButton retornarTelaPrincipalButton;
+    private JPanel imagemExcluirPanel;
+    private JLabel imagemExcluirRoupa;
     public ArrayList<RoupaLinhaExcluirTabela> listaRoupasLinhasTabela = new ArrayList<>();
 
     public ExcluirRoupa(JFrame parentFrame) {
+        //        Carregar a imagem da Exclusão de Roupas no JPanel imagemExcluirPanel
+        ImageIcon imagemExcluirIcon = new ImageIcon(getClass().getResource("imagemExcluirRoupas.png"));
+        imagemExcluirRoupa.setIcon(imagemExcluirIcon);
+
+
         excluirRoupaList.setLayout(new BoxLayout(excluirRoupaList, BoxLayout.Y_AXIS));
 
         for (Roupa roupa : Main.instanciasRoupasCriadas) {

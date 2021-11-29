@@ -14,10 +14,16 @@ public class RoupasGuardaRoupa {
     private JLabel qtdRoupasGuardaRoupaLabel;
     private JLabel corPredGuardaRoupaLabel;
     private JButton sairGuardaRoupaButton;
+    private JPanel imageGuardaRoupaPanel;
+    private JLabel imageGuardaRoupaLabel;
 
     public ArrayList<RoupaLinhaGuardaRoupaTabela> listaRoupasLinhaGuardaRoupaTabela = new ArrayList<>();
 
     public RoupasGuardaRoupa(JFrame parentFrame) {
+//        Carregar a imagem da Lavanderia no JPanel imagemLavanderiaPanel
+        ImageIcon imageGuardaRoupaIcon = new ImageIcon(getClass().getResource("imagemGuardaRoupa.png"));
+        imageGuardaRoupaLabel.setIcon(imageGuardaRoupaIcon);
+
         listaRoupasGuardaRoupaPanel.setLayout(new BoxLayout(listaRoupasGuardaRoupaPanel, BoxLayout.Y_AXIS));
         qtdRoupasGuardaRoupaLabel.setText("Quantidade de roupas no Guarda-Roupas: " + Main.guardaRoupa.countRoupas());
         corPredGuardaRoupaLabel.setText("Cor predominante no Guarda-Roupas: " + Main.guardaRoupa.getPredCor());

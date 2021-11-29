@@ -23,8 +23,17 @@ public class IncluirRoupa {
     private JComboBox localRoupaComboBox;
     private JButton incluirButton;
     private JButton cancelarButton;
+    private JPanel camposTextoPanel;
+    private JPanel tituloIncluirPanel;
+    private JPanel imagemIncluirPanel;
+    private JPanel botoesIncluirPanel;
+    private JLabel imagemIncluirLabel;
 
     public IncluirRoupa(JFrame parentFrame) {
+        //        Carregar a imagem da Inclusão de Roupas no JPanel imagemIncluirPanel
+        ImageIcon imagemIncluirIcon = new ImageIcon(getClass().getResource("imagemNovaRoupa.png"));
+        imagemIncluirLabel.setIcon(imagemIncluirIcon);
+
 
 //        Adicionar nomes dos locais das roupas no ComboBox
         for (String nomeLocalRoupa : Main.listaLocaisRoupa.keySet()) {

@@ -14,10 +14,16 @@ public class RoupasEmUso {
     private JLabel qtdRoupasEmUsoLabel;
     private JLabel corPredEmUsoLabel;
     private JButton sairRoupasEmUsoButton;
+    private JPanel imagemRoupasEmUsoPanel;
+    private JLabel imagemRoupasEmUsoLabel;
 
     public ArrayList<RoupaLinhaEmUsoTabela> listaRoupasLinhaEmUso = new ArrayList<>();
 
     public RoupasEmUso(JFrame parentFrame) {
+        //        Carregar a imagem das Roupas em Uso no JPanel imagemLavanderiaPanel
+        ImageIcon imageRoupasEmUsoIcon = new ImageIcon(getClass().getResource("imagemEmUso.png"));
+        imagemRoupasEmUsoLabel.setIcon(imageRoupasEmUsoIcon);
+
         listaRoupasEmUsoPanel.setLayout(new BoxLayout(listaRoupasEmUsoPanel, BoxLayout.Y_AXIS));
         qtdRoupasEmUsoLabel.setText("Quantidade de roupas em uso: " + Main.emUso.countRoupas());
         corPredEmUsoLabel.setText("Cor predominante em uso: " + Main.emUso.getPredCor());

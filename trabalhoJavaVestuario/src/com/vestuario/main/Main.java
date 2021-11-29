@@ -18,6 +18,10 @@ public class Main {
     private JButton excluirRoupaButton;
     private JButton sairAppButton;
     private JButton roupasEmUsoButton;
+    public JPanel imagemRoupasPanel;
+    public JLabel imagemRoupasLabelMain;
+    private JPanel tituloGerenciadorRoupasPanel;
+    private JLabel tituloGerenciadorRoupasLabel;
 
     // Criar variáveis para utilização no programa
     public static ArrayList<Roupa> instanciasRoupasCriadas = new ArrayList<Roupa>();
@@ -35,6 +39,11 @@ public class Main {
     Esporte esportivaNike = new Esporte("Camiseta Esportiva Nike", "Azul", 35, "Dry-fit", 87.99, guardaRoupa, true);
 
     public Main() {
+        // Colocando a imagem das roupas no JPanel
+        ImageIcon imagemRoupasMainIcon = new ImageIcon(getClass().getResource("imagemRoupasMain.png"));
+
+        imagemRoupasLabelMain.setIcon(imagemRoupasMainIcon);
+        imagemRoupasPanel.repaint();
 
         instanciasRoupasCriadas.add(sueterAzul);
         instanciasRoupasCriadas.add(cardigaVermelho);

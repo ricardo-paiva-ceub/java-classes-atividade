@@ -5,6 +5,7 @@ public class Esporte extends Roupa {
 
     public Esporte(String newNome, String newCor, int newNumManequim, String newTecido, double newPreco, LocalRoupa newLocal, boolean newParaCalor) {
         super(newNome, newCor, newNumManequim, newTecido, newPreco, newLocal);
+        this.categoriaRoupa = "Esporte";
 
         this.paraCalor = newParaCalor;
     }

@@ -24,6 +24,7 @@ public class ExcluirRoupa {
 
         excluirRoupaList.setLayout(new BoxLayout(excluirRoupaList, BoxLayout.Y_AXIS));
 
+//        Popular o JPanel com instâncias de roupas criadas
         for (Roupa roupa : Main.instanciasRoupasCriadas) {
             listaRoupasLinhasTabela.add(new RoupaLinhaExcluirTabela(roupa, excluirRoupaList));
             excluirRoupaList.revalidate();

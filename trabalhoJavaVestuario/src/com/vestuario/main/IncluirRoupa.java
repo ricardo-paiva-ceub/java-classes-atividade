@@ -149,8 +149,6 @@ public class IncluirRoupa {
             public void actionPerformed(ActionEvent e) {
                 opcaoCategoriaSelecionada = String.valueOf(categoriaRoupaComboBox.getSelectedItem());
 
-                System.out.println(opcaoCategoriaSelecionada);
-
                 switch (opcaoCategoriaSelecionada) {
                     case "Geral":
                         removerDoFrameAdicionais(labelNovoAdicionado, componentNovoAdicionado);

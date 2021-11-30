@@ -14,6 +14,7 @@ public class Roupa implements RoupaInterface {
     protected String tecido;
     protected double preco;
     public LocalRoupa local;
+    protected String categoriaRoupa;
 
     public static ArrayList<String> listaCategorias = new ArrayList<>(Arrays.asList("Geral", "Social", "Trabalho", "Esporte", "Esporte Fino"));
 
@@ -24,6 +25,7 @@ public class Roupa implements RoupaInterface {
         this.tecido = newTecido;
         this.preco = newPreco;
         this.local = newLocal;
+        this.categoriaRoupa = "Geral";
 
         this.local.incluirRoupa(this);
     }
@@ -91,4 +93,7 @@ public class Roupa implements RoupaInterface {
         this.local.incluirRoupa(this);
     }
 
+    public String getCategoriaRoupa() {
+        return categoriaRoupa;
+    }
 }

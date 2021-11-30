@@ -5,6 +5,7 @@ public class Trabalho extends Roupa {
 
     public Trabalho(String newNome, String newCor, int newNumManequim, String newTecido, double newPreco, LocalRoupa newLocal, String newIdUniforme) {
         super(newNome, newCor, newNumManequim, newTecido, newPreco, newLocal);
+        this.categoriaRoupa = "Trabalho";
 
         this.idUniforme = newIdUniforme;
     }

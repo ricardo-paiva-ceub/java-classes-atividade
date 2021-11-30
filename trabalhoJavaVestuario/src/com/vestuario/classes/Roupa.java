@@ -3,6 +3,9 @@ package com.vestuario.classes;
 
 import com.vestuario.interfaces.RoupaInterface;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Roupa implements RoupaInterface {
 
     protected String nome;
@@ -11,6 +14,8 @@ public class Roupa implements RoupaInterface {
     protected String tecido;
     protected double preco;
     public LocalRoupa local;
+
+    public static ArrayList<String> listaCategorias = new ArrayList<>(Arrays.asList("Geral", "Social", "Trabalho", "Esporte", "Esporte Fino"));
 
     public Roupa(String newNome, String newCor, int newNumManequim, String newTecido, double newPreco, LocalRoupa newLocal) {
         this.nome = newNome;

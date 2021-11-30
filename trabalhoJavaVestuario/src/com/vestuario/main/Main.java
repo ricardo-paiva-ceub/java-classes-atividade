@@ -3,6 +3,7 @@ package com.vestuario.main;
 import com.vestuario.classes.*;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -45,6 +46,12 @@ public class Main {
         imagemRoupasLabelMain.setIcon(imagemRoupasMainIcon);
         imagemRoupasPanel.repaint();
 
+//        Colocar o botão de sair na cor rosa
+        sairAppButton.setBackground(Color.pink);
+
+//        Impedir o redimensionamento do JFrame principal
+        framePrincipal.setResizable(false);
+
         instanciasRoupasCriadas.add(sueterAzul);
         instanciasRoupasCriadas.add(cardigaVermelho);
         instanciasRoupasCriadas.add(croppedAzul);
@@ -81,7 +88,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frameCadastrarRoupa = new JFrame("Incluir roupa");
-                frameCadastrarRoupa.setContentPane(new IncluirRoupa(frameCadastrarRoupa).incluirRoupaPannel);
+                frameCadastrarRoupa.setContentPane(new IncluirRoupa(frameCadastrarRoupa).incluirRoupaPanel);
                 frameCadastrarRoupa.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frameCadastrarRoupa.pack();
                 frameCadastrarRoupa.setVisible(true);

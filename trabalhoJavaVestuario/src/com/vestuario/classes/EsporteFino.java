@@ -19,4 +19,8 @@ public class EsporteFino extends Roupa {
 
         this.abotoada = !this.abotoada;
     }
+
+    public void setAbotoada(boolean abotoada) {
+        this.abotoada = abotoada;
+    }
 }

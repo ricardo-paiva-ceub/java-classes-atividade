@@ -25,6 +25,7 @@ public class IncluirRoupa {
     //       Esporte Fino
     private JLabel abotoadaLabel;
     private JCheckBox abotoadaCheckBox;
+//    Componentes gerais de interface
     private JLabel incluirRoupaLabel;
     private JTextField nomeRoupaTextField;
     private JTextField corRoupaTextField;

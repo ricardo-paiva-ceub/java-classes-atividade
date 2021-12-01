@@ -18,4 +18,8 @@ public class Esporte extends Roupa {
 
         this.paraCalor = !this.paraCalor;
     }
+
+    public void setParaCalor(boolean paraCalor) {
+        this.paraCalor = paraCalor;
+    }
 }

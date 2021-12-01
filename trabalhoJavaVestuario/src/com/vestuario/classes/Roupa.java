@@ -37,7 +37,7 @@ public class Roupa implements RoupaInterface {
 
     @Override
     public void setNome(String newNome) {
-        this.cor = newNome;
+        this.nome = newNome;
     }
 
     @Override
@@ -87,10 +87,12 @@ public class Roupa implements RoupaInterface {
 
     @Override
     public void setLocalRoupa(LocalRoupa newLocalRoupa) {
-        this.local.retirarRoupa(this);
+        if (newLocalRoupa != this.local) {
+            this.local.retirarRoupa(this);
 
-        this.local = newLocalRoupa;
-        this.local.incluirRoupa(this);
+            this.local = newLocalRoupa;
+            this.local.incluirRoupa(this);
+        }
     }
 
     public String getCategoriaRoupa() {

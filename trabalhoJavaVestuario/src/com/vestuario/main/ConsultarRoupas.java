@@ -22,8 +22,8 @@ public class ConsultarRoupas {
 
     public ConsultarRoupas(JFrame parentFrame) {
         //        Popular a JTable com instâncias de roupas criadas
-        String[] colunasTabela = { "Nome", "Cor", "Num manequim", "Tecido", "Preço", "Categoria", "Local" };
-        String[][] dadosTabela = new String[Main.instanciasRoupasCriadas.size()][colunasTabela.length];
+        String[] colunasTabela = { "Nome", "Cor", "Num manequim", "Tecido", "Preço", "Categoria", "Local"};
+        Object[][] dadosTabela = new Object[Main.instanciasRoupasCriadas.size()][colunasTabela.length];
 
         for (int i = 0; i < dadosTabela.length; i++) {
             dadosTabela[i][0] = Main.instanciasRoupasCriadas.get(i).getNome();

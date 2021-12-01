@@ -24,6 +24,7 @@ public class Main {
     private JPanel tituloGerenciadorRoupasPanel;
     private JLabel tituloGerenciadorRoupasLabel;
     private JButton consultarRoupasButton;
+    private JButton editarRoupaMainButton;
 
     // Criar variáveis para utilização no programa
     public static ArrayList<Roupa> instanciasRoupasCriadas = new ArrayList<Roupa>();
@@ -129,6 +130,16 @@ public class Main {
                 frameConsultarRoupas.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frameConsultarRoupas.pack();
                 frameConsultarRoupas.setVisible(true);
+            }
+        });
+        editarRoupaMainButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame frameEditarRoupa = new JFrame("Editar roupas");
+                frameEditarRoupa.setContentPane(new EditarRoupa(frameEditarRoupa).editarRoupaPanel);
+                frameEditarRoupa.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                frameEditarRoupa.pack();
+                frameEditarRoupa.setVisible(true);
             }
         });
     }

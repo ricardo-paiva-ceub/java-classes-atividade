@@ -8,10 +8,10 @@ Atividade da disciplina Paradigmas de Linguagem de Programação - Programação
 - Demais atividades (jogo do labirinto e trabalho da oficina) encontram-se na pasta /outrosTrabalhos/
 
 ## Releases
-Última release (em formato .jar): 1.5.0
+Última release (em formato .jar): 1.6.0
 
 *Últimas alterações:*
-Adicionada funcionalidade de consultar roupas (em todos os locais).
+Acrescentada a funcionalidade de editar roupas.
 
 Verificar na página de releases do git:
 Link: https://github.com/ricardo-paiva-ceub/java-classes-atividade/releases

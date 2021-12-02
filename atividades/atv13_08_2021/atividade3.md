@@ -1,0 +1,4 @@
+## Atividade 03
+Java é uma linguagem compilada ou interpretada? Explique.
+
+Java é considerada uma linguagem compilada e interpretada ao mesmo tempo, isto porque envolve dois passos: em primeiro lugar o código-fonte Java (arquivo .java) é compilado em um arquivo binário .class. Entretanto, diferentemente de linguagens como C ou C++, esse código não é executado diretamente pelo computador, mas sim é interpretado pela máquina virtual Java (JVM). Isso permite combinar as vantagens das linguagens interpretadas e compiladas, pois na compilação é gerado um arquivo binário pequeno e eficiente, que por sua vez será executado numa máquina virtual, o que permite a portabilidade e execução em qualquer sistema operacional que possua a máquina virtual Java instalada.

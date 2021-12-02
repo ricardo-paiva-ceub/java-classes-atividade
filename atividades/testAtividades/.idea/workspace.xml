@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746a848f-307b-40c9-a49b-66ac98db196e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atividade01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atividade2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atividade3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atv03_09_2021_instrucoes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atv13_08_2021_instrucoes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProgramaQuadrado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testAtividades/Carro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testAtividades/atv24_09_2021_instrucoes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Carro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atv24_09_2021_instrucoes.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,37 +56,37 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Carro">
-    <configuration name="Calculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Calculadora" />
+  <component name="RunManager" selected="Application.ProgramaQuadrado">
+    <configuration name="ProgramaDoWhileSorteio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaDoWhileSorteio" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Carro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Carro" />
+    <configuration name="ProgramaForSorteio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaForSorteio" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FuncaoFibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FuncaoFibonacci" />
+    <configuration name="ProgramaQuadrado" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaQuadrado" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediaDisciplina" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MediaDisciplina" />
+    <configuration name="ProgramaWhileSorteio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaWhileSorteio" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NomeSobrenome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NomeSobrenome" />
+    <configuration name="ProgramaWhileSorteio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaWhileSorteio2" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Carro" />
-        <item itemvalue="Application.Calculadora" />
-        <item itemvalue="Application.NomeSobrenome" />
-        <item itemvalue="Application.MediaDisciplina" />
-        <item itemvalue="Application.FuncaoFibonacci" />
+        <item itemvalue="Application.ProgramaQuadrado" />
+        <item itemvalue="Application.ProgramaDoWhileSorteio" />
+        <item itemvalue="Application.ProgramaWhileSorteio2" />
+        <item itemvalue="Application.ProgramaForSorteio" />
+        <item itemvalue="Application.ProgramaWhileSorteio" />
       </list>
     </recent_temporary>
   </component>

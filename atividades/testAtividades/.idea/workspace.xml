@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746a848f-307b-40c9-a49b-66ac98db196e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atividade01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atividade2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atividade3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv03_09_2021/atv03_09_2021_instrucoes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atividade4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../atv13_08_2021/atv13_08_2021_instrucoes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProgramaQuadrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv08_09_2021/atividade1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv08_09_2021/atividade2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv08_09_2021/atividade3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv08_09_2021/atividade4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv08_09_2021/atividade5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv08_09_2021/atividade6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../atv08_09_2021/atv08_09_2021_instrucoes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/testAtividades/ProgramaSubstring.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProgramaSubstring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testAtividades/Carro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testAtividades/atv24_09_2021_instrucoes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Carro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atv24_09_2021_instrucoes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testAtividades/ProgramaQuadrado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProgramaQuadrado.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,37 +53,37 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.ProgramaQuadrado">
-    <configuration name="ProgramaDoWhileSorteio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProgramaDoWhileSorteio" />
+  <component name="RunManager" selected="Application.ProgramaSubstring">
+    <configuration name="ProgramaString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaString" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramaForSorteio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProgramaForSorteio" />
+    <configuration name="ProgramaStringCaracteres" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaStringCaracteres" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramaQuadrado" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProgramaQuadrado" />
+    <configuration name="ProgramaStringPosicaoChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaStringPosicaoChar" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramaWhileSorteio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProgramaWhileSorteio" />
+    <configuration name="ProgramaSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgramaSubstring" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgramaWhileSorteio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProgramaWhileSorteio2" />
+    <configuration name="StringCaracteresImpares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringCaracteresImpares" />
       <module name="testAtividades" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,11 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProgramaQuadrado" />
-        <item itemvalue="Application.ProgramaDoWhileSorteio" />
-        <item itemvalue="Application.ProgramaWhileSorteio2" />
-        <item itemvalue="Application.ProgramaForSorteio" />
-        <item itemvalue="Application.ProgramaWhileSorteio" />
+        <item itemvalue="Application.ProgramaSubstring" />
+        <item itemvalue="Application.ProgramaStringPosicaoChar" />
+        <item itemvalue="Application.StringCaracteresImpares" />
+        <item itemvalue="Application.ProgramaStringCaracteres" />
+        <item itemvalue="Application.ProgramaString" />
       </list>
     </recent_temporary>
   </component>

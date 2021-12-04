@@ -3,7 +3,7 @@ Atividade da disciplina Paradigmas de Linguagem de Programação - Programação
 
 ## Instruções ao professor
 Para executar o arquivo .jar:
-1) Baixar o arquivo .jar nas "Releases" na barra lateral direita desta página do GitHub.
+1) Baixar o arquivo .jar nas "Releases" na barra lateral direita desta página do GitHub. [Link aqui](https://github.com/ricardo-paiva-ceub/java-classes-atividade/releases/tag/v1.6.0-compatibilidade).
 2) Navegar no terminal até a pasta onde foi baixado o arquivo .jar.
 3) Executar o arquivo com o comando `java -jar "nomedoarquivo"`.
 4) A versão instalada do openJDK deve ser pelo menos a 11 (preferencialmente a 17).

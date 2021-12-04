@@ -2,7 +2,7 @@
 Atividade da disciplina Paradigmas de Linguagem de Programação - Programação em JAVA
 
 ## Instruções ao professor
-Prezado professor, eu testei a aplicação .jar no meu computador e estava funcionando sem problemas, mas, caso haja erro em executar o programa a partir do artefato .jar, peço que rode a aplicação pela IDE a partir do método main, que está localizado em java-classes-atividade/trabalhoJavaVestuario/src/com/vestuario/main/Main.java. Muito obrigado!
+Prezado professor, eu testei a aplicação .jar no meu computador e estava funcionando sem problemas, mas, caso haja erro em executar o programa a partir do artefato .jar, peço que rode a aplicação pela IDE a partir do método main, que está localizado em [java-classes-atividade/trabalhoJavaVestuario/src/com/vestuario/main/Main.java](https://github.com/ricardo-paiva-ceub/java-classes-atividade/blob/master/trabalhoJavaVestuario/src/com/vestuario/main/Main.java). Muito obrigado!
 
 - Código fonte do trabalho final (Java) encontra-se na pasta /trabalhoJavaVestuario/src/com/vestuario/
 - Executável do arquivo em formato .jar foi gerado, pronto para execução. Encontra-se em "Releases" no painel lateral direita do GitHub.

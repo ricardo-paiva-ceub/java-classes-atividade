@@ -10,7 +10,7 @@ Para executar o arquivo .jar:
 
 Prezado professor, eu testei a aplicação .jar no meu computador e estava funcionando sem problemas, mas, caso haja erro em executar o programa a partir do artefato .jar, peço que rode a aplicação pela IDE a partir do método main, que está localizado em [java-classes-atividade/trabalhoJavaVestuario/src/com/vestuario/main/Main.java](https://github.com/ricardo-paiva-ceub/java-classes-atividade/blob/master/trabalhoJavaVestuario/src/com/vestuario/main/Main.java).
 
-Caso necessário, peço que faça uso da IDE IntelliJ IDEA, pois o aplicativo foi desenvolvido nessa IDE e utilizar o desginer de layout Java Swing próprio dessa IDE, que não está presente nas outras IDEs no mercado. Site para download da IDE: https://www.jetbrains.com/pt-br/idea/download/ . O projeto não será reconhecido no Eclipse ou no NetBeans por causa do designer de layout da interface gráfica.
+Caso necessário, peço que faça uso da IDE IntelliJ IDEA, pois o aplicativo foi desenvolvido nessa IDE e utiliza o desginer de layout Java Swing próprio dessa IDE, que não está presente nas outras IDEs no mercado. Site para download da IDE: https://www.jetbrains.com/pt-br/idea/download/ . O projeto não será reconhecido no Eclipse ou no NetBeans por causa do designer de layout da interface gráfica.
 
 Para a correta execução do arquivo .jar no Linux, é preciso a utilização pelo menos do openJDK 11. Para executar o .jar, é necessário ir até o diretório do arquivo no terminal e rodar o arquivo com java -jar <nomearquivo>, assegurando que a versão do jdk selecionada seja a 11 para cima (pode-se alterar a versão do jdk instalada com o comando `sudo update alternatives --config java`.
 
